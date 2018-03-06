@@ -12544,11 +12544,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Git\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+      "projectUniqueName": "C:\\Git\\DC\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
       "projectName": "CityInfo.API",
-      "projectPath": "C:\\Git\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+      "projectPath": "C:\\Git\\DC\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
       "packagesPath": "C:\\Users\\Arpad.Fodor\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\CityInfo.API\\CityInfo.API\\obj\\",
+      "outputPath": "C:\\Git\\DC\\CityInfo.API\\CityInfo.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
