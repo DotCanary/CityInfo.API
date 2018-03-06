@@ -19,15 +19,15 @@ namespace CityInfo.API.Models
                     Id = 1,
                     Name = "New York City",
                     Description = "The one with a big park",
-                    PointsOfInterest = new List<PointsOfInterestDto>()
+                    PointsOfInterest = new List<PointOfInterestDto>()
                     {
-                        new PointsOfInterestDto()
+                        new PointOfInterestDto()
                         {
                             Id = 1,
                             Name = "Central Park",
                             Description = "The most visited park"
                         },
-                        new PointsOfInterestDto()
+                        new PointOfInterestDto()
                         {
                             Id = 2,
                             Name = "Empire State Building",
@@ -41,15 +41,15 @@ namespace CityInfo.API.Models
                     Id = 2,
                     Name = "Antwerp",
                     Description = "The one with the cathedral",
-                    PointsOfInterest = new List<PointsOfInterestDto>()
+                    PointsOfInterest = new List<PointOfInterestDto>()
                     {
-                        new PointsOfInterestDto()
+                        new PointOfInterestDto()
                         {
                             Id = 3,
                             Name = "Cathedral",
                             Description = "Gothic"
                         },
-                        new PointsOfInterestDto()
+                        new PointOfInterestDto()
                         {
                             Id = 4,
                             Name = "Central Station",
@@ -63,15 +63,15 @@ namespace CityInfo.API.Models
                     Id = 3,
                     Name = "Paris",
                     Description = "The one with a big tower",
-                    PointsOfInterest = new List<PointsOfInterestDto>()
+                    PointsOfInterest = new List<PointOfInterestDto>()
                     {
-                        new PointsOfInterestDto()
+                        new PointOfInterestDto()
                         {
                             Id = 5,
                             Name = "Eiffel Tower",
                             Description = "The most visited park"
                         },
-                        new PointsOfInterestDto()
+                        new PointOfInterestDto()
                         {
                             Id = 6,
                             Name = "The Louvre",
