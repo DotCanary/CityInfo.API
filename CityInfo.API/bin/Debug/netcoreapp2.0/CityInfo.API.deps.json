@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "7c6491b782d123313f51c5d8be7df63ef9431974"
+    "signature": "dd556481816887f3598dd88137cb6e3574fd16f0"
   },
   "compilationOptions": {
     "defines": [
@@ -24,7 +24,8 @@
       "CityInfo.API/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.5",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "NLog.Extensions.Logging": "1.0.0-rtm-rc7"
         },
         "runtime": {
           "CityInfo.API.dll": {}
@@ -2363,6 +2364,26 @@
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "NLog/4.5.0-rc06": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "NLog.Extensions.Logging/1.0.0-rtm-rc7": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.0.0",
+          "NLog": "4.5.0-rc06"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.Extensions.Logging.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.Extensions.Logging.dll": {}
         }
       },
       "Remotion.Linq/2.1.1": {
@@ -5125,6 +5146,20 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "NLog/4.5.0-rc06": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RcEE+hNHTRNmk3XHWMEE1bd/CtyI/RNYBiXDxgl8oo8uIH48TMGCuY7KvBmrZUajgeRN+ep28O2oBpdv4EzRuQ==",
+      "path": "nlog/4.5.0-rc06",
+      "hashPath": "nlog.4.5.0-rc06.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/1.0.0-rtm-rc7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-faT5NH1kg6v4Vbspb8mm/DpSu1bk/YUrJWf/hq5Z/IsUZMW3mgGNzLUjurSzDZYT5UsClR983pcXvppmwsdwKA==",
+      "path": "nlog.extensions.logging/1.0.0-rtm-rc7",
+      "hashPath": "nlog.extensions.logging.1.0.0-rtm-rc7.nupkg.sha512"
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",
