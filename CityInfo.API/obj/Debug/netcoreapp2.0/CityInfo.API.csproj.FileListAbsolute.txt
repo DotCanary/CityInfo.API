@@ -19,3 +19,4 @@ C:\Git\DC\CityInfo.API\CityInfo.API\obj\Debug\netcoreapp2.0\CityInfo.API.Assembl
 C:\Git\DC\CityInfo.API\CityInfo.API\obj\Debug\netcoreapp2.0\CityInfo.API.AssemblyInfo.cs
 C:\Git\DC\CityInfo.API\CityInfo.API\obj\Debug\netcoreapp2.0\CityInfo.API.dll
 C:\Git\DC\CityInfo.API\CityInfo.API\obj\Debug\netcoreapp2.0\CityInfo.API.pdb
+C:\Git\DC\CityInfo.API\CityInfo.API\obj\Debug\netcoreapp2.0\CityInfo.API.csprojResolveAssemblyReference.cache
