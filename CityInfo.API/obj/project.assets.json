@@ -5806,7 +5806,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "5qgJHqN4cqT9ccLixoYtL97w/SdEWd4xqvGvUqEaU8WTtBjvoNZ3zn9batUHJe3AmXULloOafy+sBfZFcdeKgA==",
+      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
@@ -9668,7 +9668,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Cps7VAxZFwFmXR2v/AylJTWcMw/hqIncl5qtpikzqPJNP7XYPB9ovH00P9REpV6Wnjpf6UJQ+YGFmhMnMm589w==",
+      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -12608,35 +12608,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Arpad.Fodor\\.nuget\\packages\\": {},
+    "C:\\Users\\FodorSA\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Git\\DC\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+      "projectUniqueName": "C:\\Git\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
       "projectName": "CityInfo.API",
-      "projectPath": "C:\\Git\\DC\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
-      "packagesPath": "C:\\Users\\Arpad.Fodor\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\DC\\CityInfo.API\\CityInfo.API\\obj\\",
+      "projectPath": "C:\\Git\\CityInfo.API\\CityInfo.API\\CityInfo.API.csproj",
+      "packagesPath": "C:\\Users\\FodorSA\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\CityInfo.API\\CityInfo.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Arpad.Fodor\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\FodorSA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://sja-vso.pkgs.visualstudio.com/_packaging/Sja.Packages/nuget/v3/index.json": {}
+        "http://nuget.episerver.com/feed/packages.svc/": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
