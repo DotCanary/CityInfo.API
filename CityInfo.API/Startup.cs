@@ -63,7 +63,7 @@ namespace CityInfo.API
 #else
             services.AddTransient<IMailService, CloudMailService>();
 #endif
-            var connectionString = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=CityInfo;Data Source=DEV-MACHINE8";
+            var connectionString = Startup.Configuration["connectionStrings:cityInfoConnectionString"];
             services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connectionString));
         }
 
