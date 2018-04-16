@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 
 namespace CityInfo.API.Controllers
 {
@@ -43,9 +44,13 @@ namespace CityInfo.API.Controllers
 
                 var pointsOfInterestForCity = _cityInfoRepository.GetPointsOfInterestForCity(cityId);
 
-                var pointsOfInterestForCityResults = new List<PointOfInterestDto>();
+                //var pointsOfInterestForCityResults = new List<PointOfInterestDto>();
 
-                foreach(var poi in pointsOfInterestForCity)
+                var pointsOfInterestForCityResults =
+                    Mapper.Map<IEnumerable<PointOfInterestDto>>(pointsOfInterestForCity);
+
+                /*
+                foreach (var poi in pointsOfInterestForCity)
                 {
                     pointsOfInterestForCityResults.Add(new PointOfInterestDto()
                     {
@@ -54,7 +59,7 @@ namespace CityInfo.API.Controllers
                         Description = poi.Description
                     });
                 }
-
+                */
 
                 return Ok(pointsOfInterestForCityResults);
 
@@ -94,12 +99,15 @@ namespace CityInfo.API.Controllers
                 return NotFound();
             }
 
+            var pointOfInterestResult = Mapper.Map<PointOfInterestDto>(pointOfInterest);
+            /*
             var pointOfInterestResult = new PointOfInterestDto()
             {
                 Id = pointOfInterest.Id,
                 Name = pointOfInterest.Name,
                 Description = pointOfInterest.Description
             };
+            */
 
             //return Ok(pointOfInterest);
             return Ok(pointOfInterestResult);
@@ -122,24 +130,35 @@ namespace CityInfo.API.Controllers
             {
                 return BadRequest(ModelState);
             }
-
+            /*
             var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
             {
                 return NotFound();
             }
+            */
 
-            var maxPointOfInterestId = CitiesDataStore.Current.Cities.SelectMany(c => c.PointsOfInterest).Max(p => p.Id);
+            if(!_cityInfoRepository.CityExists(cityId))
+            {
+                return NotFound();
+            }
 
+
+            //var maxPointOfInterestId = CitiesDataStore.Current.Cities.SelectMany(c => c.PointsOfInterest).Max(p => p.Id);
+
+            /*
             var finalPointOfInterest = new PointOfInterestDto()
             {
                 Id = ++maxPointOfInterestId,
                 Name = pointOfInterest.Name,
                 Description = pointOfInterest.Description
             };
+            */
 
-            city.PointsOfInterest.Add(finalPointOfInterest);
+            var finalPointOfInterest = Mapper.Map<Entities.PointOfInterest>(pointOfInterest);
+
+            //city.PointsOfInterest.Add(finalPointOfInterest);
 
             return CreatedAtRoute("GetPointOfInterest", new { cityId = cityId, id = finalPointOfInterest.Id }, finalPointOfInterest);
         }

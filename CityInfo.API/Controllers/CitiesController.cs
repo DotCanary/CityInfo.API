@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 
 namespace CityInfo.API.Controllers
 {
@@ -30,8 +31,10 @@ namespace CityInfo.API.Controllers
 
             var cityEntities = _cityInfoRepository.GetCities();
 
-            var results = new List<CityWithoutPointsOfInterestDto>();
+            var results = Mapper.Map<IEnumerable<CityWithoutPointsOfInterestDto>>(cityEntities);
 
+            //var results = new List<CityWithoutPointsOfInterestDto>();
+            /*
             foreach(var cityEntity in cityEntities)
             {
                 results.Add(new CityWithoutPointsOfInterestDto
@@ -41,6 +44,8 @@ namespace CityInfo.API.Controllers
                     Name = cityEntity.Name
                 });
             }
+            */
+
 
             return Ok(results);
         }
@@ -57,6 +62,10 @@ namespace CityInfo.API.Controllers
 
             if(includePointsOfInterest)
             {
+                var cityResult = Mapper.Map<CityDto>(city);
+
+
+                /*
                 var cityResult = new CityDto()
                 {
                     Id = city.Id,
@@ -74,10 +83,12 @@ namespace CityInfo.API.Controllers
                             Description = poi.Description
                         });
                 }
+                */
 
                 return Ok(cityResult);
             }
 
+            /*
             var cityWithoutPointsOfInterestResult =
                 new CityWithoutPointsOfInterestDto()
                 {
@@ -85,6 +96,9 @@ namespace CityInfo.API.Controllers
                     Description = city.Description,
                     Name = city.Name
                 };
+            */
+
+            var cityWithoutPointsOfInterestResult = Mapper.Map<CityWithoutPointsOfInterestDto>(city);
 
             return Ok(cityWithoutPointsOfInterestResult);
 
